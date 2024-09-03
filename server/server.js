@@ -6,6 +6,13 @@ const cors = require("cors");
 const path = require("path");
 
 
+app.use(cors({
+    origin: 'https://jobhuntly-fb6d9c77ebdd.herokuapp.com',
+    methods: ['GET', 'POST', 'DELETE'],
+    allowedHeaders: ['Content-Type']
+  }));
+  
+
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
   });

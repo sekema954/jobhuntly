@@ -18,7 +18,7 @@ function App() {
         <Route path='/login' element={<Home></Home>}></Route>
         <Route path='/register' element={<Home></Home>}></Route>
         <Route path='/search' element={<SearchJobs></SearchJobs>}></Route>
-        <Route element={NotFound} />
+        <Route Component={NotFound} />
       </Routes>
       <Footer></Footer>
     </Router>
