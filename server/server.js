@@ -6,11 +6,15 @@ const cors = require("cors");
 const path = require("path");
 
 
-app.use(cors());
-
-//server static to backend
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
+  });
+  
+// combine frontend with backend
 app.use(express.static(path.join(__dirname, '../client/build')));
 
+
+//handle all my react routes
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
   });
