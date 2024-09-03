@@ -6,12 +6,25 @@ const cors = require("cors");
 const path = require("path");
 
 
-app.use(cors({
-    origin: 'https://jobhuntly-fb6d9c77ebdd.herokuapp.com',
+const allowedOrigins = [
+    'https://jobhuntly-fb6d9c77ebdd.herokuapp.com', 
+    'https://indeed12.p.rapidapi.com/company/${encodeURIComponent(companyName)}?locality=us',
+    'https://indeed12.p.rapidapi.com/jobs/search?query=manager&location=Georgia&page_id=1&locality=us&fromage=1&radius=',
+    'https://indeed12.p.rapidapi.com/jobs/search?query=${jobTitle}&location=${location}&page_id=1&locality=us&fromage=1&radius=25'
+  ];
+
+
+  app.use(cors({
+    origin: function(origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error('Not allowed by CORS'));
+      }
+    },
     methods: ['GET', 'POST', 'DELETE'],
     allowedHeaders: ['Content-Type']
   }));
-  
 
   
 // combine frontend with backend
