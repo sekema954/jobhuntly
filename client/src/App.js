@@ -10,19 +10,19 @@ import NotFound from './Components/404';
 function App() {
   return (
     <Router>
-      <Navbar></Navbar>
-        <div className="App"></div>
-      <Routes>
-        <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/company' element={<SearchCompaniesPage></SearchCompaniesPage>}></Route>
-        <Route path='/login' element={<Home></Home>}></Route>
-        <Route path='/register' element={<Home></Home>}></Route>
-        <Route path='/search' element={<SearchJobs></SearchJobs>}></Route>
-        <Route Component={NotFound} />
-      </Routes>
-      <Footer></Footer>
+      <Navbar />
+      <div className="App">
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/company' element={<SearchCompaniesPage />} />
+          <Route path='/login' element={<Home />} />
+          <Route path='/register' element={<Home />} />
+          <Route path='/search' element={<SearchJobs />} />
+          <Route path='*' element={<NotFound />} />
+        </Routes>
+      </div>
+      <Footer />
     </Router>
-    
   );
 }
 
