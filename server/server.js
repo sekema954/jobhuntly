@@ -11,6 +11,10 @@ app.use(cors());
 //server static to backend
 app.use(express.static(path.join(__dirname, '../client/build')));
 
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
+  });
+
 //create simple server
 app.get('/', (req, res)=>{
     res.send('Welcome To The Backend Server For my Jobhuntly Site.')
