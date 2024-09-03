@@ -35,7 +35,7 @@ function Navbar() {
           </a>
           <ul className='ml-[60px] hidden md:inline-block'>
             <li className='inline-block mx-6'><a href="/search">Find Jobs</a></li>
-            <li className='inline-block mx-6'><a href="/companies">Browse Companies</a></li>
+            <li className='inline-block mx-6'><a href="/company">Browse Companies</a></li>
           </ul>
         </div>
 
