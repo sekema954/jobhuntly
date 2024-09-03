@@ -55,8 +55,8 @@ function Navbar() {
       <div className={`fixed z-40 w-full dropdown h-0 bg-white flex items-center justify-center transition-height duration-[.5s] ${isOpen ? 'h-[350px]' : ''}`}>
         <ul className={`${isOpen ? 'block' : 'hidden'}`}>
           <li className='text-center'><a href="/">home</a></li>
-          <li className='text-center my-4'><a href="/jobs">Jobs</a></li>
-          <li className='text-center my-4'><a href="/companies">Companies</a></li>
+          <li className='text-center my-4'><a href="/search">Jobs</a></li>
+          <li className='text-center my-4'><a href="/company">Companies</a></li>
           <li className='text-center my-4'><a href="/login">Login</a></li>
           <a className='mx-6 text-white' href="/register">
               <button className='bg-[#4640DE] px-[20px] py-[5px] hover:bg-hoverColor transition-all duration-[.5s] cursor-pointer'>Sign Up</button>
