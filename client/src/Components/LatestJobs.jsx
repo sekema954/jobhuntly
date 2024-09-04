@@ -9,8 +9,8 @@ function LatestJobs() {
         const options = {
             method: 'GET',
             headers: {
-                'x-rapidapi-key': 'f8e6470882msh4963a2e6b93a4a4p123da1jsn921e443667ed',
-                'x-rapidapi-host': 'indeed12.p.rapidapi.com'
+                'x-rapidapi-key': process.enc.REACT_APP_API_KEY,
+                'x-rapidapi-host': process.env.REACT_API_HOST
             }
         };
 
