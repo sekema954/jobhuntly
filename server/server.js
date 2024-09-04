@@ -7,7 +7,7 @@ const port = process.env.PORT || 3001;
 
 // Configure CORS
 const allowedOrigins = [
-  'https://jobhuntly-fb6d9c77ebdd.herokuapp.com', 
+  'https://jobhuntly-fb6d9c77ebdd.herokuapp.com',
   // Add other allowed origins here as needed
 ];
 
