@@ -16,10 +16,13 @@ function LatestJobs() {
 
         try {
             const response = await fetch(url, options);
+            console.log('API Response:', response);
+
             if (!response.ok) {
                 throw new Error(`HTTP request failed! Error: ${response.status}`);
             }
             const result = await response.json();
+            
             const modifiedResult = result.hits.slice(0, 8);
             setData(modifiedResult);
 

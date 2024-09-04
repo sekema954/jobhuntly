@@ -12,7 +12,7 @@ function SearchJobs() {
       method: 'GET',
       headers: {
         'X-RapidAPI-Key': process.env.REACT_APP_API_KEY,
-        'X-RapidAPI-Host': 'indeed12.p.rapidapi.com',
+        'X-RapidAPI-Host': process.env.REACT_APP_API_HOST,
       },
     };
 
@@ -36,7 +36,7 @@ function SearchJobs() {
       method: 'GET',
       headers: {
         'X-RapidAPI-Key': process.env.REACT_APP_API_KEY,
-        'X-RapidAPI-Host': 'indeed12.p.rapidapi.com'
+        'X-RapidAPI-Host': process.env.REACT_APP_API_HOST
       }
     };
 
