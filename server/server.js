@@ -3,12 +3,12 @@ const cors = require('cors');
 const path = require('path');
 
 const app = express();
-const port = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3001;
 
 // Configure CORS
 const allowedOrigins = [
   'https://jobhuntly-fb6d9c77ebdd.herokuapp.com',
-  // Add other allowed origins here as needed
+  'http://localhost:3000'
 ];
 
 app.use(cors({
@@ -39,6 +39,6 @@ app.get('/', (req, res) => {
 });
 
 // Start the server
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
 });
