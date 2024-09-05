@@ -9,14 +9,13 @@ function LatestJobs() {
         const options = {
             method: 'GET',
             headers: {
-                'x-rapidapi-key': process.enc.REACT_APP_API_KEY,
-                'x-rapidapi-host': process.env.REACT_API_HOST
+                'x-rapidapi-key': process.env.REACT_APP_API_KEY,
+                'x-rapidapi-host': process.env.REACT_APP_API_HOST,
             }
         };
 
         try {
             const response = await fetch(url, options);
-            console.log('API Response:', response);
 
             if (!response.ok) {
                 throw new Error(`HTTP request failed! Error: ${response.status}`);
@@ -48,7 +47,7 @@ function LatestJobs() {
             method: 'GET',
             headers: {
                 'x-rapidapi-key': process.env.REACT_APP_API_KEY,
-                'x-rapidapi-host': 'indeed12.p.rapidapi.com'
+                'x-rapidapi-host': process.env.REACT_APP_API_HOST,
             }
         };
 
