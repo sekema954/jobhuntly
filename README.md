@@ -36,7 +36,7 @@ Clone the Repository
 
 bash
 Copy code
-git clone https://github.com/yourusername/real-estate-site.git
+git clone https://github.com/sekema954/jobhuntly.git
 Navigate to the Project Directory
 
 bash
