@@ -28,7 +28,7 @@ function Navbar() {
 
   return (
     <div>
-      <nav className={`w-full flex items-center justify-between px-[60px] py-[20px] z-[2000] ${isSticky ? 'fixed bg-white': ''}`}>
+      <nav className={`w-full flex items-center justify-between px-[60px] py-[20px] z-[2000] ${isSticky ? 'fixed': ''}`}>
         <div className='flex items-center'>
           <a href='/'>
             <img src={require("../../src/Assets/Images/logo.png")} alt="logo" />
