@@ -10,17 +10,12 @@ Welcome to the Real Estate Site project! This application is designed to showcas
   <li><a href="/folder-structure">Folder Structure</a></li>
 
 <h1 id='features'>Features</h1>
-<p>Property Listings: View a list of available properties with basic details.</p>
-<p>Property Details: Click on a property to view detailed information including images and descriptions.</p>
-<p>Search and Filter: Search for properties and apply filters to narrow down results.</p>
-<p>Responsive Design: Mobile-friendly design that adapts to different screen sizes.</p>
-<p>User Authentication: (If applicable) Sign up, log in, and manage user profiles.</p>
+<p>Responsive Design.</p>
+
 
 <h1>Tech Stack</h1>
-<p>Frontend: React, Tailwind CSS</p>
-<p>Backend: Node.js, Express</p>
-<p>Database:MongoDB</p>
-<p>RapidApi</p>
+<p>HMTL CSS</p>
+
 
 
 <h1>Folder Structure</h1>
