@@ -1,6 +1,6 @@
-<img src="https://i.imgur.com/G5YlSTp.png">
+<img src="https://i.imgur.com/lMFsPlP.png">
 
-Welcome to the Real Estate Site project! This application is designed to showcase real estate listings and provide users with a smooth browsing experience. Built using React, this site offers features like property listings, detailed property views, and user interaction options.
+Welcome to the JobHuntly Site project! This application is designed to showcase job listings and provide users with a smooth browsing experience. Built using React, this site offers features like company listings,  job listings, and user interaction options.
 
 <h1>Table of Contents</h1>
   <li><a href="/features">Features</a></li>
@@ -15,6 +15,9 @@ Welcome to the Real Estate Site project! This application is designed to showcas
 
 <h1>Tech Stack</h1>
 <p>HMTL CSS</p>
+<p>React</p>
+<p>Node</p>
+<p>Heroku</p>
 
 
 
@@ -22,11 +25,11 @@ Welcome to the Real Estate Site project! This application is designed to showcas
 <p>Here's an overview of the project's folder structure:</p>
 
 
-# Real Estate Site
+# Job Hunt Site
 
 ## Project Overview
 
-This is a full-stack real estate website with a React frontend and a separate backend server. The project is structured to separate the client (frontend) and server (backend) components.
+This is a frontend job searching website with a React frontend and a separate backend server. The project is structured to separate the client (frontend) and server (backend) components.
 
 
 <h1Installation</h1>
